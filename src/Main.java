@@ -1,13 +1,73 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+import java.util.InputMismatchException;
+import java.util.*;
+import java.util.Scanner;
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+public class Main {
+    static Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+
+
+//1----------
+    /*
+        System.out.println("Zadej jmeno");
+        String jmeno = sc.nextLine();
+        jmeno = jmeno.trim();
+
+        jmeno = jmeno.substring(0,1).toUpperCase() + jmeno.substring(1, jmeno.indexOf(" ")).toLowerCase() + jmeno.substring(jmeno.indexOf(" "), jmeno.indexOf(" ")+2).toUpperCase() + jmeno.substring(jmeno.indexOf(" ")+2, jmeno.length()).toLowerCase()      ;
+
+        System.out.println(jmeno);
+    */
+
+//2----------
+    /*
+        System.out.println("Zadej text");
+        String text = sc.nextLine();
+
+        int  pocetMezer = 0;
+        for (int i=0; i<text.length(); i++) {
+            if (text.charAt(i) == ' ') {
+                pocetMezer++;
+            }
+        }
+        System.out.println(pocetMezer);
+    */
+
+//3----------
+    /*
+        System.out.println("Zadej slovo");
+        String slovo = sc.nextLine();
+        char zacatek = slovo.charAt(0);
+        char konec = slovo.charAt(slovo.length() - 1);
+        System.out.println("Začíná na -" +zacatek+ "- A končí na -" +konec+ "-");
+    */
+
+//4----------
+        System.out.println("Zadej text");
+        String text = sc.nextLine();
+        System.out.println("Zadej slovo které chceš vyhledat");
+        String slovo = sc.nextLine();
+
+        int pocet =0;
+        int index = text.indexOf(slovo);
+
+        do {
+            pocet++;
+            System.out.println(" - pozice " + index);
+            index = text.indexOf(slovo, index+1);
+        }while(index != -1);
+        System.out.println("našel jsem to "+pocet+" krát");
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
