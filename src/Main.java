@@ -42,6 +42,7 @@ public class Main {
     */
 
 //4----------
+    /*
         System.out.println("Zadej text");
         String text = sc.nextLine();
         System.out.println("Zadej slovo které chceš vyhledat");
@@ -56,14 +57,48 @@ public class Main {
             index = text.indexOf(slovo, index+1);
         }while(index != -1);
         System.out.println("našel jsem to "+pocet+" krát");
+    */
 
+//5----------
+    /*
+        System.out.println("Zadej email");
+        String email = sc.nextLine();
 
+        int i = email.indexOf('@');
+        String jmeno = email.substring(0,i);
+        String domena = email.substring(i+1);
+        System.out.println(jmeno);
+        System.out.println("@");
+        System.out.println(domena);
 
+    */
 
+//6----------
+    /*
+        //a
+        System.out.println("Zadej slovo");
+        String slovo2 = sc.nextLine();
 
+        String reverseSlovo2 = new StringBuilder(slovo2).reverse().toString();
+        System.out.println(reverseSlovo2);
 
+        //b
+        StringBuilder cikcakSlovo2 = new StringBuilder(slovo2.toLowerCase());
+        for (int i=0; i < slovo2.length(); i +=2) {
+            char c = Character.toUpperCase(cikcakSlovo2.charAt(i));
+            cikcakSlovo2.setCharAt(i, c);
 
+        }
+        System.out.println(cikcakSlovo2);
 
+        //c
+        StringBuilder palindromSlovo2 = new StringBuilder(slovo2.toLowerCase());
+        reverseSlovo2 = reverseSlovo2.substring(1);
+        palindromSlovo2.append(reverseSlovo2);
+        System.out.println(palindromSlovo2);
+    */
+
+//7----------
 
 
 
