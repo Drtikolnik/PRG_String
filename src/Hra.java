@@ -62,7 +62,7 @@ public class Hra {
        }
 
        public void check(){
-            if(puvodniMesto.equals(odpoved.toUpperCase())){
+            if((puvodniMesto.toUpperCase()).equals(odpoved.toUpperCase())){
                 System.out.println("SPRÁVNĚĚĚ!!!");
             }else {
                 System.out.println("ŠPATNĚĚĚ!!!");
