@@ -7,6 +7,11 @@ public class Main2 {
 
     public static void main(String[] args) {
 
+        Hra hra = new Hra();
+        hra.pridatMesta();
+        hra.shuffle();
+        hra.zadatMesto();
+        hra.check();
 
     }
 }
