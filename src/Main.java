@@ -98,7 +98,8 @@ public class Main {
         System.out.println(palindromSlovo2);
     */
 
-//7----------
+//4-ANALÝZA-TEXTU----------
+
 
 
 
